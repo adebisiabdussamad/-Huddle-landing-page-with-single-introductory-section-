@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+  --color-300-purple: hsl(257, 40%, 49%);
+  --color-400-softmagenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-300-purple);
+  background-image: url(./images/bg-desktop.svg);
+  max-width: 80%;
+  margin: 2rem auto 0;
+
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.img-logo {
+  width: 100%;
+}
+
+
+#hero-section {
+  display: flex;
+  flex-direction: row;
+  height: 28rem;
+}
+
+.hero_img img {
+  width: 35rem;
+}
+
+.hero_text {
+  margin: 40px;
+}
+
+h2 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+h2+p {
+  margin-top: 15px;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 35px;
+}
+
+.btn {
+  background-color: white;
+  padding: 0.7rem 3.5rem;
+  border-radius: 25px;
+  color: var(--color-300-purple);
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--color-400-softmagenta);
+  box-shadow: 1px 1px 10px#222121;
+  transition: all 500ms;
+}
+
+
+.feather {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  fill: #fff;
+  stroke: #fff;
+  transition: all 500ms linear;
+}
+
+.feather-instagram {
+  fill: transparent;
+  stroke: #fff;
+}
+
+.feather:hover {
+  fill: var(--color-400-softmagenta);
+  stroke: var(--color-400-softmagenta);
+  border-color: var(--color-400-softmagenta);
+}
+
+.feather-instagram:hover {
+  fill: transparent;
+  stroke: var(--color-400-softmagenta);
+}
+
+.b-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.social_icon_box {
+  width: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+}
+
+footer {
+  color: #fff;
+  align-items: center;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.attribution a {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(300, 64%, 66%);
+  transition: all 500ms;
+}
+
+.attribution :hover {
+  color: var(--color-400-softmagenta);
+  font-size: 18px;
+}
+
+
+@media (max-width: 1115px) {
+  .hero_img img {
+    width: 30rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
